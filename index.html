@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Uhádnem tvoje číslo!</title>
+  </head>
+  <body>
+    <h1>Najdem tvoje číslo (1 - 100)</h1>
+    <p>
+      Vyber si číslo od 1 do 100. Klikni na tlačidlo, keď si pripravený:
+    </p>
+    <button onclick="startTrick()">Začať</button>
+
+    <div id="game" style="display: none">
+      <div id="group-display" class="group"></div>
+
+      <div style="margin-top: 10px">
+        <button onclick="prevPage()" id="prevBtn">Späť</button>
+        <button onclick="nextPage()" id="nextBtn">Ďalej</button>
+      </div>
+
+      <div id="answer-buttons" style="margin-top: 15px">
+        <p>Je tvoje číslo v tejto skupine?</p>
+        <button onclick="answer(true)">Áno</button>
+        <button onclick="answer(false)">Nie</button>
+      </div>
+    </div>
+
+    <h2 id="result"></h2>
+    
+
+    <script src="app.js"></script>
+  </body>
+</html>
