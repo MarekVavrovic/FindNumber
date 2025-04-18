@@ -8,10 +8,8 @@ let currentPage = 0;
 const pageSize = 10;
 
 function startTrick() {
-  // Skry hlavičku
-  document.getElementById("header").style.display = "none";
 
-  // Reset premenných, nastav hru
+  document.getElementById("header").style.display = "none";
   currentBit = 0;
   answerBits = 0;
   document.getElementById("result").textContent = "";

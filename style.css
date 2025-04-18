@@ -29,13 +29,17 @@ button {
   padding: 8px 16px;
   font-size:2rem
 }
+
+.startButton{
+  margin: 4rem 0;
+}
 .container h1{
   font-size: clamp(4rem, 6vw, 4rem);
   margin-bottom: 4rem;
 }
 
 .container p{
-  font-size: clamp(1rem, 3.5vw, 1.8rem);
+  font-size: clamp(3rem, 3.5vw, 1.8rem);
   margin-bottom: 4rem;
 }
 .x-1{
@@ -44,6 +48,10 @@ button {
 
 .x-1 strong{
   font-size: 2rem;
+}
+
+#result{
+ font-size: clamp(3rem, 3.5vw, 1.8rem);
 }
 
 @keyframes glow {
