@@ -1,13 +1,21 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
   font-family: sans-serif;
   text-align: center;
 
-  padding: 20px;
+
 }
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   height: 100vh;
 }
@@ -27,6 +35,13 @@ button {
 .container p{
   font-size:1.8rem ;
 }
+.x-1{
+  margin-bottom:4rem;
+}
+
+.x-1 strong{
+  font-size: 2rem;
+}
 
 @keyframes glow {
   0% {
@@ -43,4 +58,8 @@ button {
 .glow {
   animation: glow 1.5s ease-in-out infinite alternate;
   color: rgb(19, 20, 20);
+}
+
+#header {
+  transition: all 1s ease;
 }

@@ -7,14 +7,19 @@
   </head>
   <body>
     <div class="container">
-      <h1>Najdem tvoje číslo <br>(1 - 100)</h1>
-      <p>Vyber si číslo od 1 do 100.<br> Klikni na tlačidlo, keď si pripravený:</p>
-      <button onclick="startTrick()">Začať</button>
+      <header id="header">
+        <h1>Najdem tvoje číslo <br />(1 - 100)</h1>
+        <p>
+          Vyber si číslo od 1 do 100.<br />
+          Klikni na tlačidlo, keď si pripravený:
+        </p>
+        <button onclick="startTrick()">Začať</button>
+      </header>
 
       <div id="game" style="display: none">
         <div id="group-display" class="group"></div>
 
-        <div style="margin-top: 10px">
+        <div style="margin-top: 35px">
           <button onclick="prevPage()" id="prevBtn">Späť</button>
           <button onclick="nextPage()" id="nextBtn">Ďalej</button>
         </div>
