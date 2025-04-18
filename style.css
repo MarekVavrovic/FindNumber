@@ -10,8 +10,9 @@
 body {
   font-family: sans-serif;
   text-align: center;
-
-
+}
+html {
+  font-size: 16px;
 }
 .container {
   display: flex;
@@ -29,11 +30,13 @@ button {
   font-size:2rem
 }
 .container h1{
-  font-size:4rem ;
+  font-size: clamp(4rem, 6vw, 4rem);
+  margin-bottom: 4rem;
 }
 
 .container p{
-  font-size:1.8rem ;
+  font-size: clamp(1rem, 3.5vw, 1.8rem);
+  margin-bottom: 4rem;
 }
 .x-1{
   margin-bottom:4rem;
@@ -62,4 +65,10 @@ button {
 
 #header {
   transition: all 1s ease;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 18px;
+  }
 }
